@@ -1,3 +1,15 @@
+/*
+FONT SIZE SYSTEM (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+SPACING SYSTEM (px)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +17,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .main {
@@ -15,7 +27,11 @@ body {
   width: 960px;
   row-gap: 4%;
 }
-
+h2 {
+  /* 24 / 30 / 36 / */
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
 /*SECTION 1 */
 .section-1 {
   display: flex;
@@ -25,13 +41,16 @@ body {
 }
 
 .header-h1 {
-  letter-spacing: 1;
-  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  font-size: 44px; /* 44 / 52 / 62 */
   margin-bottom: 4.5%;
 }
 
 .header-p {
   margin-bottom: 4.5%;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .header-img {
   width: 440px;
@@ -48,7 +67,12 @@ body {
   margin-bottom: 5%;
 }
 .section-2--part-1-p-1 {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  font-size: 20px;
+}
+.features-text {
+  font-size: 18px;
+  line-height: 1.5;
 }
 /*SECTION 3 */
 .section-3 {
@@ -64,9 +88,12 @@ body {
 }
 .section-3--h2 {
   margin-bottom: 3%;
+  font-size: 30px;
 }
 blockquote {
   margin-bottom: 3%;
+  font-size: 18px;
+  font-style: italic;
 }
 /*SECTION 4 */
 .section-4 {
@@ -82,16 +109,16 @@ blockquote {
   width: 100%;
   margin-bottom: 10%;
 }
-.section-4--part-ul,
-.section-4--price {
+.section-4--part-ul {
   padding: 0 9.5%;
 }
 .section-4--part-ul li:first-child {
   font-weight: bold;
-  font-size: 2.2vmin;
+  font-size: 20px;
 }
 .section-4--part-ul li {
   margin-bottom: 10%;
+  font-size: 18px;
 }
 .section-4--price {
   display: flex;
@@ -99,7 +126,23 @@ blockquote {
 }
 .section-4--price p {
   font-weight: bold;
+  font-size: 20px;
+  padding-left: 25px;
 }
 footer {
-  font-size: 1.9vmin;
+  font-size: 14px;
+}
+a:link,
+a:visited,
+a:focus,
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.section-4--price a:link,
+.section-4--price a:visited,
+.section-4--price a:focus,
+.section-4--price a:hover {
+  font-size: 18px;
 }
