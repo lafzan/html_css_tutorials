@@ -12,6 +12,7 @@ COLOR SYSTEM
 MAIN COLOR : #087f5b
 GREY COLOR : #343a40
 
+ICONS
 
 */
 
@@ -67,14 +68,21 @@ h2 {
 .section-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 8%;
+  column-gap: 100px;
+}
+.feature-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .section-2--h2 {
   grid-column: 1/-1;
-  margin-bottom: 5%;
+  margin-bottom: 50px;
 }
 .section-2--part-1-p-1 {
-  margin-bottom: 10%;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 .features-text {
@@ -117,22 +125,22 @@ blockquote {
 }
 .section-4--part-img {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 50px;
 }
 .section-4--part-ul {
-  padding: 0 9.5%;
+  padding: 0 20px;
 }
 .section-4--part-ul li:first-child {
   font-weight: bold;
   font-size: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .section-4--part-ul li {
   margin-bottom: 10%;
   font-size: 18px;
 }
 .section-4--part-ul li:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .section-4--price {
   display: flex;
@@ -142,7 +150,7 @@ blockquote {
 .section-4--price p {
   font-weight: bold;
   font-size: 20px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 footer {
   font-size: 14px;
@@ -185,4 +193,12 @@ a:hover {
   display: inline-block;
   font-weight: 500;
   letter-spacing: 1.1px;
+}
+
+.chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 10px;
 }
