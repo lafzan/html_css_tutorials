@@ -53,6 +53,7 @@ h2 {
   line-height: 1.1;
   font-size: 44px; /* 44 / 52 / 62 */
   margin-bottom: 30px;
+  /* text-shadow: 0 5px 3px rgba(0, 0, 0, 0.2); */
 }
 
 .header-p {
@@ -146,11 +147,11 @@ blockquote {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 20px;
 }
 .section-4--price p {
   font-weight: bold;
   font-size: 20px;
-  padding-left: 20px;
 }
 footer {
   font-size: 14px;
@@ -184,21 +185,32 @@ a:hover {
 }
 
 .section-4--price a:link,
-.section-4--price a:visited,
-.section-4--price a:focus,
-.section-4--price a:hover {
+.section-4--price a:visited {
   font-size: 14px;
-  background-color: #099268;
+  background-color: #087f5b;
   padding: 8px 12px;
   display: inline-block;
   font-weight: 500;
   letter-spacing: 1.1px;
 }
-
+.section-4--price a:hover,
+.section-4--price a:active {
+  background-color: #099268;
+  font-size: 14px;
+  padding: 8px 12px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
 .chair-icon {
   stroke: #087f5b;
   width: 24px;
   height: 24px;
   display: inline-block;
   margin-right: 10px;
+}
+
+.card {
+  /*box-shadow: horizontal-vertical-blur-scaling up- color */
+  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.1);
 }
